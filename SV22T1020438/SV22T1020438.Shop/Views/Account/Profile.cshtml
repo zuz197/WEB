@@ -1,0 +1,37 @@
+@model SV22T1020438.Shop.Models.Customer
+
+<h2>Thông tin cá nhân</h2>
+
+<form method="post">
+    <div class="mb-3">
+        <label>Tên khách hàng</label>
+        <input type="text" name="CustomerName" value="@Model.CustomerName" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Người liên hệ</label>
+        <input type="text" name="ContactName" value="@Model.ContactName" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Địa chỉ</label>
+        <input type="text" name="Address" value="@Model.Address" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Tỉnh</label>
+        <input type="text" name="Province" value="@Model.Province" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Số điện thoại</label>
+        <input type="text" name="Phone" value="@Model.Phone" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Email</label>
+        <input type="text" value="@Model.Email" class="form-control" readonly />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Cập nhật</button>
+</form>

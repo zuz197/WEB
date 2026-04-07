@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>SV22T1020438.Admin</AssemblyName>
+    <RootNamespace>SV22T1020438.Admin</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Properties\launchSettings.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Admin.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SV22T1020438.BusinessLayers\SV22T1020438.BusinessLayers.csproj" />
+    <ProjectReference Include="..\SV22T1020438.DataLayers\SV22T1020438.DataLayers.csproj" />
+    <ProjectReference Include="..\SV22T1020438.Models\SV22T1020438.Models.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+  </ItemGroup>
+</Project>

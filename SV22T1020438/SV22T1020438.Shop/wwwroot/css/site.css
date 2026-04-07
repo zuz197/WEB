@@ -1,0 +1,56 @@
+:root{
+  --brand-blue:#0b57a4; /* hơi đậm */
+  --brand-blue-2:#1565c0;
+  --bg:#f5f9ff;
+}
+
+body{
+    background: var(--bg);
+    color:#222;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Navbar */
+.navbar.bg-primary{
+    background: var(--brand-blue) !important;
+}
+
+/* Buttons */
+.btn-primary{
+    background: var(--brand-blue) !important;
+    border-color: var(--brand-blue) !important;
+}
+
+.btn-primary:hover{
+    background: var(--brand-blue-2) !important;
+    border-color: var(--brand-blue-2) !important;
+}
+
+/* Cards */
+.card{
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.card .card-img-top{
+    transition: transform .25s ease;
+}
+.card:hover .card-img-top{
+    transform: scale(1.05);
+}
+
+/* Table header */
+th{
+    background: var(--brand-blue);
+    color: #fff;
+}
+
+/* Footer */
+footer.bg-primary{
+    background: var(--brand-blue) !important;
+}
+
+/* Responsive small fixes */
+@media (max-width:576px){
+    .card .card-img-top{ height:150px; object-fit:cover; }
+}
